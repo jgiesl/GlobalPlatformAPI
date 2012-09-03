@@ -1,5 +1,4 @@
-#ifndef __GPSTOREDATA_H
-#define __GPSTOREDATA_H
+#pragma once
 
 #include "GP_Command.h"
 
@@ -50,4 +49,3 @@ namespace GPAPI
 	};
 
 }
-#endif
