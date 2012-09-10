@@ -102,7 +102,7 @@ namespace GPAPI
 		m_pRequestData.INS = pRequest->INS;
 		m_pRequestData.P1  = pRequest->P1;
 		m_pRequestData.P2  = pRequest->P2;
-		m_pRequestData.Lc = pRequest->Lc;
+		m_pRequestData.Lc  = pRequest->Lc;
 
 		if(m_pRequestData.Data != 0)
 			delete[] m_pRequestData.Data;
@@ -115,7 +115,7 @@ namespace GPAPI
 		}
 		memcpy(m_pRequestData.Data, pRequest->Data, m_pRequestData.Lc);
 
-		m_pRequestData.Le = pRequest->Le;
+		m_pRequestData.Le  = pRequest->Le;
 
 		return true;
 	}
@@ -144,7 +144,7 @@ namespace GPAPI
 		unsigned char preq[270] = {0};
 		unsigned long creq = 0;
 		unsigned char pres[270] = {0};
-		unsigned long cres = 0;
+		unsigned long cres = sizeof(pres);
 
 		// modify CLA if secure messaging is required
 		if(pSecurityInfo != 0)
