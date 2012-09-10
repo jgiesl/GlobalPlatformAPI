@@ -121,7 +121,7 @@ bool CSmartCard::Exchange(const unsigned char* pInput, const unsigned long cInpu
 
 	// print response
 	fprintf(stderr, "<< ");
-	for(int i=0; i<(int)cOutput; i++)
+	for(int i=0; i<(int)*cOutput; i++)
 		fprintf(stderr,"%.2x ", pOutput[i]);
 	fprintf(stderr,"\r\n");
 
