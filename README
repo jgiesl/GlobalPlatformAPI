@@ -1,0 +1,5 @@
+-----------------
+GlobalPlatformAPI
+-----------------
+
+GlobalPlatformAPI is a C++ wrapper for APDU commands according to Global Platform. It implements classes for each APDU command with public methods for setting its parameters and data. Interface for custom securing and transmitting APDU messages is also at disposal.
